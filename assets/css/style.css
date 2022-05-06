@@ -31,3 +31,75 @@ body{
 .cabecalho__img{
     width: 40px;
 }
+.menu{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--side-menu);  
+    width: 75vw;
+    max-width: 400px;
+    height: 100vh; 
+}
+
+.menu__img{
+    width: 118px;
+    align-self: center;
+    padding: 1rem;
+}
+
+.menu__lista{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style: none;
+    width: 100%;
+}
+.menu__item{
+    width: 100%;
+}
+.menu__link{
+    height: 64px;
+    width: 100%;
+    color: var(--font-alt);
+    background-color: var(--side-menu);
+    text-decoration: none;
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    cursor: pointer;
+    transition: all .3s ease-in;
+    cursor: pointer;
+}
+.menu__link::before{
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.menu__link--home::before{
+    content: '\e902';
+}
+.menu__link--videos::before{
+    content: '\e90e';
+}
+.menu__link--places::before{
+    content: '\e909';
+}
+.menu__link--peoples::before{
+    content: '\e903';
+}
+.menu__link--shop::before{
+    content: '\e900';
+}
+.menu__link--pictures::before{
+    content: '\e90a';
+}
+.menu__link--ativo{
+    color: var(--font);
+    padding-left: 1.5rem;
+    border-left: .5rem solid var(--font);
+}
+.menu__link:hover{
+    filter: brightness(.9);
+}
