@@ -1,0 +1,33 @@
+body{
+    background-color: var(--body);
+    color: var(--font);
+}
+
+.cabecalho{
+    width: 100%;
+    background-color: var(--header-mobile);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+    box-shadow: var(--shadow);
+}
+
+.cabecalho__menu, .cabecalho__notificacao{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--font);
+    font-size: 1.5rem;
+}
+.cabecalho__menu i::before{
+    content: '\e904';
+}
+
+.cabecalho__notificacao i::before{
+    content: '\e906';
+}
+
+.cabecalho__img{
+    width: 40px;
+}
