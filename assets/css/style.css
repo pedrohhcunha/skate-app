@@ -117,11 +117,12 @@ body{
 }
 .principal{
     padding: 1.5rem 1rem;
+    display: grid;
+    gap: 1rem;
 }
 .principal__titulo{
     font-size: 1.5rem;
     font-weight: 700;
-    margin-bottom: 1rem;
 }
 .cartao{
     width: 100%;
