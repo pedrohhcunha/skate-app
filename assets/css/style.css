@@ -130,6 +130,9 @@ body{
     overflow: hidden;
     background-color: var(--card);
 }
+.cartao--destaque{
+    margin-bottom: 16px;
+}
 .cartao__img{
     width: inherit;
 }
@@ -178,6 +181,7 @@ body{
     border: none;
     color: var(--font);
     outline: none;
+    justify-self: flex-end;
 }
 .cartao__botao--play::before{
     content: '\e90b';
@@ -186,4 +190,13 @@ body{
 .cartao__botao--destaque{
     width: 100%;
     grid-column: span 2;
+}
+.secao{
+    display: grid;
+    gap: 16px;
+}
+
+.secao__titulo{
+    font-weight: 700;
+    font-size: 1.2rem;
 }
